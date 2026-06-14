@@ -47,6 +47,8 @@ public class GetWeeklyTemperatures {
         // Calculating this outside of the loop is necessary to keep the formula accurate.
         averageDailyTempForWeek = sumOfAverageDailyTemps / avgDailyTemp.size();
 
+        scanner.nextLine(); // Clears the buffer left by nextDouble();
+
         // Data Retrieval Phase
         System.out.print("Type a day to view its average temperature, 'week' for the weekly summary, or 'done' to exit: ");
         userInput = scanner.nextLine();
